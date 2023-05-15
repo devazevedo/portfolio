@@ -5,8 +5,6 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 
-<link href="//db.onlinewebfonts.com/c/1d8aa3902ed39929de0912f0ff2bb89f?family=Centra+No2" rel="stylesheet" type="text/css"/>
-
 export const NavBar = ()  => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, seScrolled] = useState(false)
@@ -30,7 +28,7 @@ export const NavBar = ()  => {
     }
 
     return(
-        <Navbar expand="lg" class={ scrolled ? "scrolled" : "" }>
+        <Navbar expand="lg" className={ scrolled ? "scrolled" : "" }>
         <Container>
             <Navbar.Brand href="#home">
                 <img src={ logo } alt="Logo"/>
